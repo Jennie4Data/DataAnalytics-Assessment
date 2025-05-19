@@ -40,7 +40,7 @@ This query was written with performance and scalability in mind by following key
 
 
 ----
-## QUESTION 2- Transaction Frequency Analysis Query Logic and Optimization
+## QUESTION 2- Transaction Frequency Analysis
 The query calculates the average number of transactions per customer per month and categorizes customers into High, Medium, or Low frequency segments based on their transaction activity.
 
 **Logic Overview:**
@@ -58,7 +58,7 @@ The query calculates the average number of transactions per customer per month a
 - Grouped by month using `DATE_FORMAT` for straightforward date handling.
 
 ---
-## QUESTION 3- Account Inactivity Alert Query Logic
+## QUESTION 3- Account Inactivity Alert
 ### Business Scenario
 The operations team needs to identify accounts (either savings or investment plans) that have been inactive, meaning no inflow transactions for over one year (365 days). This helps flag accounts requiring attention or re-engagement.
 
@@ -85,7 +85,7 @@ The operations team needs to identify accounts (either savings or investment pla
 - Limited complexity by splitting logic into **CTEs** for clarity and maintainability.
 
 ---
-## QUESTION 4- Customer Lifetime Value (CLV) Estimation Query Logic
+## QUESTION 4- Customer Lifetime Value (CLV) Estimation
 ### Business Scenario
 Marketing wants to estimate the lifetime value of customers using a simplified model based on account tenure and transaction volume.
 ### Logic Explanation
