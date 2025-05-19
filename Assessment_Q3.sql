@@ -3,7 +3,7 @@ WITH last_txn_per_plan AS
  (SELECT 
         plan_id,
         owner_id,
-        MAX(transaction_date) AS last_transaction_date
+        DATE(MAX(transaction_date)) AS last_transaction_date
     FROM savings_savingsaccount
     WHERE transaction_type_id = 1  -- inflow transactions
     GROUP BY plan_id, owner_id),
